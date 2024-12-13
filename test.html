@@ -1,0 +1,25 @@
+<!-- Run Test: npx http-server . -->
+
+<!DOCTYPE html>
+<html>
+  <html>
+    <head>
+      <title>Test</title>
+    </head>
+
+    <body>
+      <script type="module">
+        import WebMetricsSDK from "./src/index.js";
+        const sdk = new WebMetricsSDK({ debug: true });
+        sdk.init();
+      </script>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+        perferendis eum voluptates iste amet consectetur laboriosam dolor
+        laudantium, dolores dicta eos natus consequatur rerum, impedit
+        temporibus ut dolorem fuga aperiam!
+      </p>
+    </body>
+  </html>
+</html>
