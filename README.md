@@ -1,15 +1,19 @@
-# Web Metrics SDK (MVP)
+# Web Metrics SDK
 
-## Introduction
-This SDK collects basic web performance metrics (starting with just FCP) and logs or sends them to a configured endpoint.
-
-## Installation
-Currently not published, just clone this repo.
+## Features
+- Collects basic performance metrics.
+- `performance` config option:
+  - `'none'`: No performance metrics
+  - `'coreWebVitals'`: Collects FCP, LCP, CLS
 
 ## Usage
 ```html
 <script type="module">
   import WebMetricsSDK from './src/index.js';
-  const sdk = new WebMetricsSDK({ debug: true });
+
+  const sdk = new WebMetricsSDK({
+    debug: true,
+    performance: 'coreWebVitals'
+  });
   sdk.init();
 </script>
